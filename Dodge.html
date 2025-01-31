@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dodge - Puissance et Audace</title>
+    <style>
+         body {
+            font-family: 'Lato', sans-serif;
+            background-color: #000; 
+            color: #e6e6e6; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f1f1f; 
+            color: #ec4f33; 
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            color: #ec4f33; 
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .home-button {
+            background-color: transparent;
+            border: 2px solid #ec4f33; 
+            color: #ec4f33; 
+            padding: 12px 24px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #ec4f33; 
+            color: #000; 
+            transform: scale(1.1); 
+            box-shadow: 0 5px 15px rgba(231, 69, 51, 0.86); 
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            color: #e6e6e6;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #ec4f33;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .car-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(230, 194, 127, 0.3);
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        .car img:hover {
+            opacity: 0.8;
+        }
+
+        .car h3 {
+            font-size: 1.8em;
+            color: #ec4f33;
+            margin-top: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .car h4 {
+            color: #e6e6e6;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .car ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .car ul li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            .car-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Dodge <img src="Dodge/Dodge.svg.png" width="70" height="70" alt="Logo Dodge"></h1>
+    <div class="navbar">
+        <a href="Acceuil_voiture.html" class="home-button">Retour à l'Accueil</a>
+        <a href="buggati.html" class="home-button">Bugatti</a>
+        <a href="Ferrari.html" class="home-button">Ferrari</a>
+        <a href="Rolls Royce.html" class="home-button">Rolls-Royce</a>
+        <a href="audi.html" class="home-button">Audi</a>
+        <a href="page Porsche.html" class="home-button">Porsche</a>
+        <a href="page lamborghini .html" class="home-button">Lamborghini</a>
+        <a href="page Maserati.html" class="home-button">Maserati</a>
+        <a href="Alpine.html" class="home-button">Alpine</a>
+        <a href="Mclaren.html" class="home-button">McLaren</a>
+        <a href="Mercedes.html" class="home-button">Mercedes</a>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Modèles Emblématiques</h2>
+        <section class="car-gallery">
+            <div class="car">
+                <h3>Challenger SRT</h3>
+                <a href="challenger-srt.html"><img src="Dodge/srt.jpg" alt="Dodge Challenger SRT"></a>
+                <p>Un muscle car légendaire alliant puissance et style.</p>
+                <ul>
+                    <li>Moteur : V8 HEMI</li>
+                    <li>Puissance : 797 ch</li>
+                    <li>Accélération 0-100 km/h : 3,4 sec</li>
+                </ul>
+            </div>
+        
+            <div class="car">
+                <h3>Charger Charger</h3>
+                <a href="charger-hellcat.html"><img src="Dodge/Dodge_Charger_SRT_Hellcat_2019_001.jpg" alt="Dodge Charger Hellcat"></a>
+                <p>Une berline puissante avec une âme de muscle car.</p>
+                <ul>
+                    <li>Moteur : V8 HEMI</li>
+                    <li>Puissance : 717 ch</li>
+                    <li>Accélération 0-100 km/h : 3,5 sec</li>
+                </ul>
+            </div>
+        
+            <div class="car">
+                <h3>Durango SRT</h3>
+                <a href="durango-srt.html"><img src="Dodge/2022-dodge-durango-srt-392-mmp-1-1635365247.jpg.avif" alt="Dodge Durango SRT"></a>
+                <p>Un SUV puissant et polyvalent.</p>
+                <ul>
+                    <li>Moteur : V8 HEMI</li>
+                    <li>Puissance : 710 ch</li>
+                    <li>Accélération 0-100 km/h : 4,1 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - Viper ACR -->
+            <div class="car">
+                <h3>Viper ACR</h3>
+                <a href="viper-acr.html"><img src="Dodge/Dodge_Viper_Coupe_ACR_2015_a1be7-615x410.jpg" alt="Dodge Viper ACR"></a>
+                <p>Un modèle de performance pure, conçu pour la piste.</p>
+                <ul>
+                    <li>Moteur : V10</li>
+                    <li>Puissance : 645 ch</li>
+                    <li>Accélération 0-100 km/h : 3,3 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - RAM 1500 TRX -->
+            <div class="car">
+                <h3>RAM 1500 TRX</h3>
+                <a href="ram-1500-trx.html"><img src="Dodge/TRX-2-scaled-e1711111361885.jpg.webp" alt="Dodge RAM 1500 TRX"></a>
+                <p>Le pick-up tout-terrain le plus puissant de sa catégorie.</p>
+                <ul>
+                    <li>Moteur : V8 Supercharged</li>
+                    <li>Puissance : 702 ch</li>
+                    <li>Accélération 0-100 km/h : 4,5 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - Hornet R/T -->
+            <div class="car">
+                <h3>Hornet R/T</h3>
+                <a href="hornet-rt.html"><img src="Dodge/hornet.jpg" alt="Dodge Hornet R/T"></a>
+                <p>Un SUV compact sportif, alliant performance et agilité.</p>
+                <ul>
+                    <li>Moteur : 2.0L Turbo</li>
+                    <li>Puissance : 288 ch</li>
+                    <li>Accélération 0-100 km/h : 6,1 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - Grand Caravan -->
+            <div class="car">
+                <h3>Grand Caravan</h3>
+                <a href="grand-caravan.html"><img src="Dodge/grand .jpg" alt="Dodge Grand Caravan"></a>
+                <p>Un monospace spacieux et pratique, idéal pour toute la famille.</p>
+                <ul>
+                    <li>Moteur : V6</li>
+                    <li>Puissance : 287 ch</li>
+                    <li>Accélération 0-100 km/h : 7,2 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - Dart GT -->
+            <div class="car">
+                <h3>Dart GT</h3>
+                <a href="dart-gt.html"><img src="Dodge/038527_2013_dodge_Dart.jpg" alt="Dodge Dart GT"></a>
+                <p>Une berline compacte alliant agilité et performance.</p>
+                <ul>
+                    <li>Moteur : 2.4L I4</li>
+                    <li>Puissance : 184 ch</li>
+                    <li>Accélération 0-100 km/h : 6,5 sec</li>
+                </ul>
+            </div>
+        
+            <!-- Nouveau modèle Dodge - Neon SRT4 -->
+            <div class="car">
+                <h3>Neon SRT4</h3>
+                <a href="neon-srt4.html"><img src="Dodge/2005_dodge_neon_feature-photo-1.avif" alt="Dodge Neon SRT4"></a>
+                <p>Un modèle compact avec une touche sportive et turbo.</p>
+                <ul>
+                    <li>Moteur : 2.4L Turbo</li>
+                    <li>Puissance : 230 ch</li>
+                    <li>Accélération 0-100 km/h : 5,5 sec</li>
+                </ul>
+            </div>
+        </section>
+        </body>
+        </html>
+        
